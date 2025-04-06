@@ -1,0 +1,122 @@
+/* Body styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #74ebd5, #ACB6E5);
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Main game container */
+  #main {
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  /* Heading */
+  #main h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 28px;
+  }
+  
+  /* Input box */
+  #input1 {
+    padding: 12px;
+    width: 80%;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  #input1:focus {
+    border-color: #74ebd5;
+    box-shadow: 0 0 5px #74ebd5;
+  }
+  
+  /* Buttons */
+  button {
+    padding: 12px 20px;
+    margin: 10px 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  #guessBtn {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  #guessBtn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+  }
+  
+  #restartBtn {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  #restartBtn:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+  }
+  
+  /* Output and Timer */
+  #outputBox,
+  #timer {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  /* Result message styling */
+  #result {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 480px) {
+    #main {
+      padding: 25px;
+      border-radius: 15px;
+    }
+  
+    #main h1 {
+      font-size: 22px;
+    }
+  
+    #input1 {
+      width: 100%;
+      font-size: 15px;
+    }
+  
+    button {
+      width: 100%;
+      margin: 8px 0;
+      font-size: 15px;
+    }
+  
+    #outputBox,
+    #timer {
+      font-size: 16px;
+    }
+  }
+  
